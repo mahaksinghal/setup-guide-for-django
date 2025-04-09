@@ -1,0 +1,82 @@
+         		client
+	          	url
+	form -->   view  <-- model
+	        	templates
+
+
+
+Step-1 click the link and follow the commands listed -->
+https://github.com/digipodium/setup-guide-for-django-2024/blob/main/new_blank_website.md
+
+Step -2 
+python manage.py runserver
+then click the link provided in the terminal of vs code
+
+don't kill the previous terminal
+open new terminal in vs code -->
+
+Step-3 (optional)
+python manage.py 
+
+Step - 4
+python manage.py migrate
+
+Step - 5
+python manage.py createsuperuser
+
+Step - 6
+open the website,
+in the url section, type admin at the end of the type "/admin"
+Example: "http://127.0.0.1:8000/admin"
+login with the username and password you created above
+
+Step - 7
+python manage.py startapp <app_name>
+Example: python manage.py startapp main_app or python manage.py startapp blog
+
+Step - 8
+add app name in setting.py in INSTALLED_APPS
+Example: INSTALLED_APPS = [..., 'main_app',] or
+Example: INSTALLED_APPS = [..., 'blog',]
+
+step - 9
+create functions in views.py you want to add in your website
+
+Step - 10
+firstly, import the 'main_app' in urls.py
+Example: import main_app or from blog import views as blog_view
+then, add path of functions you created in views.py to the urls.py
+
+Step - 11
+now go to home.html or any other html and add the links you want to link your pages to
+
+Step - 12
+for auto reload of pages after updation of pages, follow the steps:
+https://pypi.org/project/django-browser-reload/
+
+
+Adding logic to your pages
+Step - 13
+
+
+
+Step - 14
+after creating classes in models.py
+
+Rule:
+1. When you create a new model
+2. When you update a setting in model
+
+Run these commands:
+python manage.py makemigrations
+python manage.py migrate
+
+
+
+
+if we have to hide a file install dotenv
+add .env file and write the key or whtever u want to write
+and then write '.env' to .gitignore file 
+
+
+
