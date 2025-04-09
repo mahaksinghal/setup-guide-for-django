@@ -1,0 +1,13 @@
+bootstrap
+Django documentation
+Django packages
+fontawesome
+Django humanize
+swiper js
+ckeditor django
+
+for creating social authentication system in Django use Django allauth
+
+for github
+Authorization callback URL
+http://127.0.0.1:1800/accounts/github/login/callback/
