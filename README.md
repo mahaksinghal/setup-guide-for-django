@@ -13,5 +13,3 @@
 4. [Usage](new_blank_website.md) 
     - create [Django Project](new_blank_website.md)
     - create [app inside website](new_website_app.md)
-6. [License](#license)
-    - The license for this project is [MIT](LICENSE)
